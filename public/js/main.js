@@ -62,7 +62,7 @@ const outputMessage = message => {
     pText.textContent = `${message.text}`
     
     const span = document.createElement('span');
-    span.textContent = `${message.time}`;
+    span.textContent = ` ${message.time}`;
     p.appendChild(span)
 
     div.appendChild(p)
