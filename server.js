@@ -2,7 +2,7 @@
 
 const path = require('path')
 const express = require('express')
-const PORT = 3000 || process.env.PORT
+const PORT = process.env.PORT
 const http = require('http')
 const socketio = require('socket.io')
 const formatMessage = require('./utils/messages');
