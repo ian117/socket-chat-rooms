@@ -3,7 +3,9 @@
 :root {
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
+	--dark-color-c: #be0a0a;
 	--light-color: #e6e9ff;
+	--light-color-Server: #8d6b2c;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -19,6 +21,11 @@ body {
 	font-size: 16px;
 	background: var(--light-color);
 	margin: 20px;
+}
+
+.ul-div {
+	overflow: auto;
+	height: 300px;
 }
 
 ul {
@@ -98,7 +105,22 @@ a {
 	border-radius: 5px;
 }
 
+.chat-messages .messageServer {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color-Server);
+	border-radius: 5px;
+}
+
 .chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .metaServer {
 	font-size: 15px;
 	font-weight: bold;
 	color: var(--dark-color-b);
